@@ -2,6 +2,9 @@
 logs/
 *.log
 
+# FFmpeg
+ffmpeg/
+
 # Python
 __pycache__/
 *.py[cod]
