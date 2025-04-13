@@ -20,7 +20,7 @@ A desktop application for downloading YouTube videos and audio using a clean, da
 ## Requirements
 
 - Python 3.x
-- FFmpeg (included in repository)
+- FFmpeg
 - Required Python packages:
   - yt-dlp
   - tkinter
@@ -36,8 +36,18 @@ cd youtube-downloader
 
 2. Install required Python packages:
 ```bash
-pip install yt-dlp validators
+pip install -r requirements.txt
 ```
+
+3. Download and Install FFmpeg:
+   - Download FFmpeg from the [official website](https://ffmpeg.org/download.html)
+   - Extract the downloaded archive
+   - Create a folder named `ffmpeg` in the project directory
+   - Inside the `ffmpeg` folder, create path: `ffmpeg-master-latest-win64-gpl/bin/`
+   - Copy the following files from the extracted archive to this bin folder:
+     - ffmpeg.exe
+     - ffplay.exe
+     - ffprobe.exe
 
 ## Usage
 
