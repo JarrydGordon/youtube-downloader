@@ -15,6 +15,7 @@ A desktop application for downloading YouTube videos and audio using a clean, da
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Documentation](#documentation)
 - [New Features (v1.1.0)](#new-features-v110)
 - [Project Structure](#project-structure)
 - [Default Save Locations](#default-save-locations)
@@ -162,6 +163,19 @@ python -m youtube_downloader.audio_downloader
 4. **Click Download** and wait for completion
 5. **Find your file** in the default save location
 
+## Documentation
+
+Complete documentation is available in the [`docs/`](./docs/) directory:
+
+- **[Documentation Index](./docs/README.md)** - Overview of all documentation
+- **[Contributing Guide](./docs/CONTRIBUTING.md)** - How to contribute to the project and set up development environment
+- **[Testing Guide](./docs/TESTING.md)** - How to run tests and understand test structure
+- **[Changelog](./docs/CHANGELOG.md)** - Version history and planned features
+- **[CI/CD Setup](./docs/CICD_SETUP.md)** - Setting up continuous integration pipelines
+- **[GitHub Workflows](./docs/WORKFLOWS.md)** - Documentation on automated CI/CD workflows
+
+For a complete overview of all documentation, visit the [Documentation Index](./docs/README.md).
+
 ## New Features (v1.1.0)
 
 The upcoming version 1.1.0 includes several exciting improvements:
@@ -172,29 +186,37 @@ The upcoming version 1.1.0 includes several exciting improvements:
 - **Enhanced Progress Tracking**: More detailed download statistics and better progress visualization
 - **Improved Error Handling**: Better error messages and recovery options
 
-See [CHANGELOG.md](CHANGELOG.md) for a complete list of changes.
+See [CHANGELOG.md](docs/CHANGELOG.md) for a complete list of changes.
 
 ## Project Structure
 
 ```
 youtube-downloader/
-├── youtube_downloader/        # Main package directory
-│   ├── __init__.py           # Package initialization
-│   ├── base_gui.py           # Shared GUI components
-│   ├── config.py             # Configuration management
-│   ├── audio_downloader.py   # Audio downloader GUI
-│   └── video_downloader.py   # Video downloader GUI
+├── docs/                     # Documentation directory
+│   ├── README.md            # Documentation index
+│   ├── CONTRIBUTING.md      # Contribution guidelines
+│   ├── TESTING.md           # Testing guide
+│   ├── CHANGELOG.md         # Version history
+│   ├── CICD_SETUP.md        # CI/CD setup guide
+│   └── WORKFLOWS.md         # GitHub workflows reference
+├── youtube_downloader/       # Main package directory
+│   ├── __init__.py          # Package initialization
+│   ├── base_gui.py          # Shared GUI components
+│   ├── config.py            # Configuration management
+│   ├── audio_downloader.py  # Audio downloader GUI
+│   └── video_downloader.py  # Video downloader GUI
 ├── tests/                    # Test directory
 │   ├── __init__.py
-│   ├── test_config.py        # Configuration tests
-│   └── test_base_gui.py      # GUI component tests
-├── YT_Audio.py               # Legacy wrapper (deprecated)
-├── YT_Video.py               # Legacy wrapper (deprecated)
-├── setup.py                  # Package setup file
-├── requirements.txt          # Python dependencies
-├── CONTRIBUTING.md           # Contribution guidelines
-├── CHANGELOG.md              # Version history
-└── README.md                 # This file
+│   ├── test_config.py       # Configuration tests
+│   └── test_base_gui.py     # GUI component tests
+├── .github/                 # GitHub configuration
+│   ├── workflows/           # CI/CD workflows
+│   └── ISSUE_TEMPLATE/      # Issue templates
+├── YT_Audio.py              # Legacy wrapper (deprecated)
+├── YT_Video.py              # Legacy wrapper (deprecated)
+├── setup.py                 # Package setup file
+├── requirements.txt         # Python dependencies
+└── README.md                # This file
 ```
 
 ## Default Save Locations
@@ -271,7 +293,7 @@ The codebase follows these principles:
 - **Testing**: Unit tests for core functionality
 - **Code Style**: PEP 8 compliance with Black formatting
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed development guidelines.
+See [CONTRIBUTING.md](docs/CONTRIBUTING.md) for detailed development guidelines.
 
 ## Troubleshooting
 
@@ -487,7 +509,7 @@ The application requires:
 
 ## Contributing
 
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines on:
+We welcome contributions! Please see [CONTRIBUTING.md](docs/CONTRIBUTING.md) for detailed guidelines on:
 - Setting up your development environment
 - Running tests
 - Code style guidelines
@@ -517,8 +539,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - [GitHub Repository](https://github.com/JarrydGordon/youtube-downloader)
 - [Issue Tracker](https://github.com/JarrydGordon/youtube-downloader/issues)
-- [Changelog](CHANGELOG.md)
-- [Contributing Guidelines](CONTRIBUTING.md)
+- [Documentation](docs/README.md)
+- [Changelog](docs/CHANGELOG.md)
+- [Contributing Guidelines](docs/CONTRIBUTING.md)
 
 ---
 

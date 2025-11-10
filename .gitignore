@@ -47,6 +47,13 @@ Thumbs.db
 .mypy_cache/
 .ruff_cache/
 .coverage
+coverage.xml
 htmlcov/
 .tox/
 .hypothesis/
+TEST_COVERAGE_SUMMARY.md
+TEST_SUITE_SUMMARY.txt
+
+# Environment and Local Configuration
+.env
+Makefile.local
