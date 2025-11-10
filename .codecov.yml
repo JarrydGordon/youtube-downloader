@@ -1,0 +1,44 @@
+# Codecov configuration
+# https://docs.codecov.com/docs/codecov-yaml
+
+coverage:
+  precision: 2
+  round: down
+  range: 70..100
+  status:
+    project:
+      default:
+        target: auto
+        threshold: 1%
+        base: auto
+    patch:
+      default:
+        target: auto
+        threshold: 1%
+
+comment:
+  layout: "header, diff, files"
+  behavior: default
+  require_changes: false
+  require_base: false
+  require_head: true
+
+ignore:
+  - "tests/"
+  - "**/__init__.py"
+  - "setup.py"
+  - "YT_*.py"
+
+flags:
+  py39:
+    paths:
+      - youtube_downloader/
+  py310:
+    paths:
+      - youtube_downloader/
+  py311:
+    paths:
+      - youtube_downloader/
+  py312:
+    paths:
+      - youtube_downloader/
